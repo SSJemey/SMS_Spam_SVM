@@ -1,0 +1,151 @@
+{
+  "dataset": {
+    "messages": 5169,
+    "ham": 4516,
+    "spam": 653,
+    "train": 4135,
+    "test": 1034
+  },
+  "test_baseline": {
+    "accuracy": 0.9835589941972921,
+    "precision": 0.9830508474576272,
+    "recall": 0.8854961832061069,
+    "f1": 0.9317269076305221,
+    "roc_auc": 0.995866196647308,
+    "avg_precision": 0.9818121153219119,
+    "tn": 901,
+    "fp": 2,
+    "fn": 15,
+    "tp": 116
+  },
+  "test_enhanced": {
+    "accuracy": 0.9903288201160542,
+    "precision": 0.9763779527559056,
+    "recall": 0.9465648854961832,
+    "f1": 0.9612403100775194,
+    "roc_auc": 0.9985967047923378,
+    "avg_precision": 0.9934051772468541,
+    "tn": 900,
+    "fp": 3,
+    "fn": 7,
+    "tp": 124
+  },
+  "cv_full_dataset": {
+    "baseline": {
+      "accuracy": 0.9808476934282788,
+      "precision": 0.9678429570790336,
+      "recall": 0.8774750440399295,
+      "f1": 0.9203528961713794
+    },
+    "enhanced": {
+      "accuracy": 0.9907139821106579,
+      "precision": 0.979619436022776,
+      "recall": 0.9463887257780387,
+      "f1": 0.9625034468840885
+    }
+  },
+  "best_params": {
+    "C": 1,
+    "class_weight": "balanced",
+    "meta_features": false
+  },
+  "best_cv_f1": 0.9609529925272197,
+  "robustness": {
+    "baseline_correct": 10,
+    "enhanced_correct": 11,
+    "total": 12
+  },
+  "classifier_comparison": [
+    {
+      "model": "SVM (linear)",
+      "accuracy": 0.9898428053204352,
+      "precision": 0.9819550822729332,
+      "recall": 0.9367216117216118,
+      "f1": 0.9587311751918227,
+      "f1_std": 0.009428999217395895,
+      "fit_seconds": 0.8679219722747803
+    },
+    {
+      "model": "Multinomial Naive Bayes",
+      "accuracy": 0.989359129383313,
+      "precision": 0.9747112447093766,
+      "recall": 0.9405860805860806,
+      "f1": 0.9572219405281157,
+      "f1_std": 0.012718954261687223,
+      "fit_seconds": 1.8865503787994384
+    },
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.9881499395405078,
+      "precision": 0.9818206476370683,
+      "recall": 0.9232783882783883,
+      "f1": 0.951466754984782,
+      "f1_std": 0.010646026517200041,
+      "fit_seconds": 1.0553489208221436
+    },
+    {
+      "model": "SVM (RBF kernel)",
+      "accuracy": 0.9876662636033856,
+      "precision": 0.989639017653165,
+      "recall": 0.9117582417582417,
+      "f1": 0.9488900315441441,
+      "f1_std": 0.015023104780061964,
+      "fit_seconds": 11.283589172363282
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9864570737605804,
+      "precision": 0.9917942309694887,
+      "recall": 0.9002747252747254,
+      "f1": 0.9435344242587507,
+      "f1_std": 0.014140908849566265,
+      "fit_seconds": 4.896694135665894
+    },
+    {
+      "model": "K\u2011Nearest Neighbours",
+      "accuracy": 0.9806529625151148,
+      "precision": 0.9848731884057971,
+      "recall": 0.8600915750915752,
+      "f1": 0.9178765456239963,
+      "f1_std": 0.018214838136362578,
+      "fit_seconds": 0.826598072052002
+    }
+  ],
+  "ablation": [
+    {
+      "step": "1. Baseline (original project)",
+      "accuracy": 0.97726723095526,
+      "precision": 0.9699780358793643,
+      "recall": 0.8467765567765568,
+      "f1": 0.9036129513150541
+    },
+    {
+      "step": "2. + better cleaning (keep URL/phone/\u00a3 tokens)",
+      "accuracy": 0.9886336154776298,
+      "precision": 0.9779917022413555,
+      "recall": 0.9309890109890111,
+      "f1": 0.9538434038310039
+    },
+    {
+      "step": "3. + character n\u2011grams",
+      "accuracy": 0.9898428053204352,
+      "precision": 0.9819550822729332,
+      "recall": 0.9367216117216118,
+      "f1": 0.9587311751918227
+    },
+    {
+      "step": "4. + meta features",
+      "accuracy": 0.9896009673518742,
+      "precision": 0.9783207029024694,
+      "recall": 0.9386446886446886,
+      "f1": 0.9579430397576173
+    },
+    {
+      "step": "5. + balanced class weights",
+      "accuracy": 0.9883917775090689,
+      "precision": 0.9686801611087326,
+      "recall": 0.9386446886446886,
+      "f1": 0.9533009572365982
+    }
+  ]
+}

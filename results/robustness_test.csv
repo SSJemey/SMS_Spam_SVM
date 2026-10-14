@@ -1,0 +1,13 @@
+message,actual,baseline,enhanced,enhanced_spam_prob
+"FR33 entry! W1N a £500 prize, txt WIN to 80086 now",Spam,Spam,Spam,0.998
+Congratulations ur awarded 2 nights holiday. Call 09061743810 to claim,Spam,Spam,Spam,0.991
+Your account has been suspended. Verify now at www.secure-login-update.com,Spam,Ham,Spam,0.85
+U have been selected for a CA$H reward of $1000. Reply YES to claim,Spam,Spam,Spam,0.981
+URGENT! Your mobile number has won a cash bonus. Ring 0800 123 4567,Spam,Spam,Spam,0.983
+"Get c-h-e-a-p loans today, no credit check!! text LOAN to 61234",Spam,Ham,Spam,0.795
+"Hey, can you send me the notes from today's class?",Ham,Ham,Ham,0.006
+"I'll be home late, don't wait for dinner",Ham,Ham,Ham,0.001
+"Call me when you reach the station, I'm near gate 2",Ham,Ham,Ham,0.008
+Your OTP is 482913. Do not share it with anyone.,Ham,Ham,Spam,0.742
+"Happy birthday!! Have an amazing day, see you tonight",Ham,Ham,Ham,0.01
+Can we move the meeting to 3pm tomorrow?,Ham,Ham,Ham,0.003

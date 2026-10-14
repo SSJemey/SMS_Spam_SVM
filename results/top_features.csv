@@ -1,0 +1,31 @@
+feature,weight,direction
+word: phonetoken,2.41665932485762,spam
+word: moneytoken,1.5376479883380334,spam
+word: urltoken,1.4305743240620408,spam
+word: numtoken,0.8844891941590152,spam
+word: call phonetoken,0.8198753896450217,spam
+word: text,0.7923719696071229,spam
+word: numtoken numtoken,0.741760302178765,spam
+char: ' 0',0.7146602104334155,spam
+word: number numtoken,0.6720879281149538,spam
+word: free,0.6042638345355534,spam
+word: txt,0.5939641749643693,spam
+word: mobile,0.5842892801200751,spam
+char: '50',0.5806401723523223,spam
+word: reply,0.5695040864572762,spam
+char: '00',0.5395452084163523,spam
+char: 'i ',-0.3716220551095595,ham
+char: '..',-0.37073372198821053,ham
+char: ' i ',-0.3411333104017105,ham
+char: ' i',-0.34110980593747964,ham
+word: ltgt,-0.3186114855500122,ham
+word: ring,-0.3151654162655265,ham
+char: 'my ',-0.31209120427579384,ham
+char: ' my ',-0.30975878220174213,ham
+word: free call,-0.30599335730563715,ham
+char: ' m',-0.2912165056130498,ham
+char: ' my',-0.2899582942953598,ham
+word: hey,-0.28136084336352474,ham
+word: added contact,-0.2764453276831663,ham
+word: free sm,-0.2764453276831663,ham
+word: ill,-0.2690125051825566,ham
